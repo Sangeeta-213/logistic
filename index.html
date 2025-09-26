@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>M.D. Logistics</title>
+  <link rel="stylesheet" href="style.css">
+  <!-- Font Awesome for icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+  <!-- Top Info Bar -->
+  <div class="topbar">
+    <div><i class="fa fa-phone"></i> 83993939998</div>
+    <div><i class="fa fa-envelope"></i> support@mdlogistic.com</div>
+    <div><i class="fa fa-clock"></i> 10:00 AM - 06:00 PM</div>
+  </div>
+
+  <!-- Navbar -->
+  <nav>
+    <div class="logo">
+      <img src="images/logot.png" alt="MD Logistics Logo">
+    </div>
+    <ul class="menu">
+      <li><a href="#" class="active">Home</a></li>
+      <li><a href="#">About</a></li>
+      <li><a href="#">Service</a></li>
+      <li><a href="#">Contact</a></li>
+      <li><a href="#">Gallery</a></li>
+    </ul>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="hero" id="hero">
+    <div class="clouds">
+        
+    </div>
+
+    <div class="hero-text">
+      <h2>Welcome To <br><span>M.D. LOGISTICS</span></h2>
+    </div>
+
+    <!-- Big Truck (stationary) -->
+     
+    <img src="images/btruck.png" alt="Big Truck" class="big-truck">
+
+    <!-- Small Truck (animated) -->
+    <img src="images/struck.png" alt="Small Truck" class="small-truck">
+     
+  </section>
+
+  
+    <script>
+  // Auto Light/Dark mode switch on ONLY the big truck
+  const truck = document.querySelector(".big-truck");
+  setInterval(() => {
+    truck.classList.toggle("dark");
+  }, 1000); // switch every 1 sec
+</script>
+  
+
+</body>
+</html>
